@@ -1,0 +1,7 @@
+version: v1beta1
+plugins:
+  # protoc-gen-go needs to be installed, generate go files based on proto files
+  - name: go
+    out: /tmp/api
+    opt:
+     - paths=source_relative
