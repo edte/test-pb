@@ -11,5 +11,3 @@ message HelloRequest {
 message HelloResponse {
   string msg=1;
 }
-
-
