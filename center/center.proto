@@ -29,6 +29,7 @@ message DiscoveryResponse {
 message HeatRequest {
   int64 sendTime = 1;
   string serverName=2;
+  string addr =3;
 }
 
 message HeatResponse {
