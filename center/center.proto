@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package center;
+
+option go_package = "./center";
+
+// registe
+message RegisterRequest {
+  string serverName=1;
+  string addr =2;
+  repeated string functions =3;
+}
+
+message RegisterResponse {
+  string err=1;
+}
+
+
+// discovery
+message DiscoveryRequest {
+  string server=1;
+}
+
+message DiscoveryResponse {
+  string err=1;
+}
