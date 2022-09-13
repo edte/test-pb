@@ -26,10 +26,11 @@ message DiscoveryResponse {
 }
 
 // heat
-message PingRequest {
+message HeatRequest {
   int64 sendTime = 1;
+  string serverName=2;
 }
 
-message PingResponse {
+message HeatResponse {
   int64 responseTime = 1;
 }
