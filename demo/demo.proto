@@ -11,3 +11,11 @@ message EchoRequest {
 message EchoResponse {
   string msg=1;
 }
+
+message HelloRequest {
+  string msg=1;
+}
+
+message HelloResponse {
+  string msg=1;
+}

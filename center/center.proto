@@ -24,3 +24,12 @@ message DiscoveryRequest {
 message DiscoveryResponse {
   string err=1;
 }
+
+// heat
+message PingRequest {
+  int64 sendTime = 1;
+}
+
+message PingResponse {
+  int64 responseTime = 1;
+}
