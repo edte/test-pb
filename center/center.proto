@@ -15,14 +15,14 @@ message RegisterResponse {
   string err=1;
 }
 
-
 // discovery
 message DiscoveryRequest {
-  string server=1;
+  string server=1; // 这里支持 servername 或者 servername.funcname 两种方式
 }
 
 message DiscoveryResponse {
-  string err=1;
+  string addr=1;
+  string err=2;
 }
 
 // heat
